@@ -12,6 +12,7 @@
 		8D4768401DC544BF00C82F7F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8D47683E1DC544BF00C82F7F /* Main.storyboard */; };
 		8D4768421DC544BF00C82F7F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8D4768411DC544BF00C82F7F /* Assets.xcassets */; };
 		8D4768451DC544BF00C82F7F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8D4768431DC544BF00C82F7F /* LaunchScreen.storyboard */; };
+		8D47684F1DC54CD400C82F7F /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D47684E1DC54CD400C82F7F /* SWRevealViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,10 @@
 		8D4768411DC544BF00C82F7F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8D4768441DC544BF00C82F7F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8D4768461DC544BF00C82F7F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8D47684C1DC5450700C82F7F /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
+		8D47684D1DC545A700C82F7F /* quickapps-bridging-header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "quickapps-bridging-header.h"; sourceTree = "<group>"; };
+		8D47684E1DC54CD400C82F7F /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
+		8D680FBC1DC54E0C00FA088E /* slidemenu-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "slidemenu-Bridging-Header.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,12 +59,16 @@
 		8D4768391DC544BF00C82F7F /* slidemenu */ = {
 			isa = PBXGroup;
 			children = (
+				8D47684E1DC54CD400C82F7F /* SWRevealViewController.m */,
+				8D47684C1DC5450700C82F7F /* SWRevealViewController.h */,
+				8D47684D1DC545A700C82F7F /* quickapps-bridging-header.h */,
 				8D47683A1DC544BF00C82F7F /* AppDelegate.swift */,
 				8D47683C1DC544BF00C82F7F /* ViewController.swift */,
 				8D47683E1DC544BF00C82F7F /* Main.storyboard */,
 				8D4768411DC544BF00C82F7F /* Assets.xcassets */,
 				8D4768431DC544BF00C82F7F /* LaunchScreen.storyboard */,
 				8D4768461DC544BF00C82F7F /* Info.plist */,
+				8D680FBC1DC54E0C00FA088E /* slidemenu-Bridging-Header.h */,
 			);
 			path = slidemenu;
 			sourceTree = "<group>";
@@ -139,6 +148,7 @@
 			files = (
 				8D47683D1DC544BF00C82F7F /* ViewController.swift in Sources */,
 				8D47683B1DC544BF00C82F7F /* AppDelegate.swift in Sources */,
+				8D47684F1DC54CD400C82F7F /* SWRevealViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -266,6 +276,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.quickapps.slidemenu;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "./slidemenu/slidemenu-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -279,6 +290,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.quickapps.slidemenu;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "./slidemenu/slidemenu-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
@@ -302,6 +314,7 @@
 				8D47684B1DC544BF00C82F7F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

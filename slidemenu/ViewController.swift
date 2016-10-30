@@ -8,18 +8,72 @@
 
 import UIKit
 
+
 class ViewController: UIViewController {
 
+    @IBOutlet weak var menuBar: UIBarButtonItem!
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        
+        
+        
+        
+        
+        
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+   
+
+
+        
+   
+    @IBAction func slideMenu() {
+        
+        if revealViewController() != nil {
+            
+            menuBar.target = revealViewController()
+            menuBar.action = #selector(SWRevealViewController.revealToggle(_:))
+            
+            
+            //slide out menu
+            
+            view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
+            
+            
+            
+            //customize width of menu
+            
+            self.revealViewController().rearViewRevealWidth = 210
+
+            
+            
+        }
+        
+           
+   
+        }
+        
+        
+        
+        
     }
 
+     
+            
+       
+    
+    
+    
+    
+    
 
-}
+        
+        
+        
+
+        
+
+
+
 
